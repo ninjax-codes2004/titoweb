@@ -1,0 +1,444 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans Display', sans-serif;
+}
+/* header section */
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(/images/Road-In-Black-And-White-1440x900.jpg);
+    background-size: cover;
+    position: relative;
+    line-height: 1.8em;
+}
+/* navbar-section */
+nav{
+    display: flex;
+    float: center;
+}
+.logo{
+    float: right;
+    background: rgba(114, 114, 114, 0.26);
+    border-radius: 150%;
+    transition: 0.5s;
+}
+.logo:hover{
+    background: rgba(0, 0, 255, 0.199);
+    border: 5px solid rgba(230, 20, 20, 0.356);
+}
+.navlinks{
+    flex: 1;
+    text-align: left;
+}
+.navlinks ul li {
+    list-style-type: none;
+    background-color: transparent;
+    display: inline-block;
+    position: relative;
+    padding: 8px 12px;
+   }
+.navlinks ul li a {
+    color: white;
+    text-decoration: none;
+ font-size: 18px;
+  }
+  .navlinks ul li::after{
+      content:"";
+    width: 1px;
+    height: 5px;
+    background: rgb(201, 0, 0);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+  }
+  .navlinks ul li:hover:after{
+    width: 40px;
+    background: blue;
+}
+/* content-section */
+.content{
+    margin: 35px;
+    width: auto;
+    font-size: 25px;
+    text-align: center;
+    padding-top: 15%;
+    color: white;
+}
+.welcome{
+    padding-top: 2%;
+    margin:10px 40px;
+    font-size: 60px;
+    transition: 0.5s;
+}
+.welcome:hover{
+    font-size: 100px;
+}
+.content p{
+    padding-top: 2%;
+    margin:10px 40px;
+    font-size: 14px;
+    transition: 0.5s;
+}
+.content p:hover{
+ font-size: 18px;
+}
+.sign-here{
+    font-size: 16px;
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+   background: red;
+   padding: 8px 32px;
+  border: 2px solid #fff;
+  margin-top: 50px;
+}
+.sign-here:hover{
+    font-size: 30px;
+    border: 2px solid rgba(255, 255, 255, 0.527);
+    background:rgba(255, 166, 0, 0.466);
+    color: #fff;
+    transition: 0.5s;
+}
+
+/* news section */
+.divider{
+    content:"";
+    width: 145px;
+    height: 5px;
+    background: rgb(92, 92, 92);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+    border-radius: 20%;
+}
+.divider:hover{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.stories{
+    background-color: rgb(53, 53, 53);
+    min-height: 200vh;
+    width: 100%;
+    background-size: cover;
+    position: relative;
+    margin-top: -0.1%;
+}
+.row{
+    padding-top: 5%;
+    margin: 5%;
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+}
+.image{
+    width: 250px;
+   border-radius:100px;
+   margin-top: 60px;
+   border: 3px solid rgb(209, 209, 209);
+   transition: 0.5s;
+}
+h3{
+    text-align: center;
+    margin: 20px;
+    margin-top: -20px;
+}
+.story-txt{
+    color: #fff;
+    font-weight: 300;
+    line-height: 10px;
+    padding: 8px;
+    text-align: center;
+}
+.tea{
+    flex-basis: 31px;
+    background:rgb(88, 88, 88) ;
+    border-radius: 100px;
+    padding-bottom: 5%;
+    transition: 0.5s;
+    font-size: 18px;
+}
+.fashion{
+    flex-basis: 31px;
+    background:rgb(88, 88, 88) ;
+    border-radius: 100px;
+    padding-bottom: 5%;
+    transition: 0.5s;
+    font-size: 16px;
+}
+.back{
+    flex-basis: 31px;
+    background:rgb(88, 88, 88) ;
+    border-radius: 100px;
+    padding-bottom: 5%;
+    transition: 0.5s;
+    margin-bottom: 15%;
+    font-size: 14px;
+}
+.tea:hover{
+    background: rgb(114, 81, 81);
+    font-size: 16px;
+}
+.fashion:hover{
+    background: rgb(114, 81, 81);
+    font-size: 14px;
+   }
+.back:hover{
+    background: rgb(114, 81, 81);
+    font-size: 12px;
+    text-align: center;
+}
+.image:hover{
+    border-radius:30px;
+    width: 200px;
+}
+/* offers */
+.offers{
+    width: 900px;
+    text-align: center;
+    font-size: 13px;
+    padding: auto;
+    margin: auto;
+    margin-top: -200px;
+    background: rgba(173, 173, 173, 0.39);
+    border: 2px solid white;
+    line-height: 2em;
+    color: rgb(212, 212, 212);
+}
+.offers p{
+    margin-top: 50px;
+    border: auto;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+}
+.offers h1{
+    font-size:60px;
+    margin-top: 40px;
+    color: #fff;
+}
+/* footer */
+.footer{
+    background-color: rgb(0, 1, 12);
+    padding: 70px 0;
+}
+.footer-row{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-column{
+    width: 25%;
+    padding: 0 15px;
+}
+.footer-column h2{
+ color: #fff;
+ font-weight: normal;
+ font-size: 18px;
+ margin-bottom: 30px;
+ text-transform: capitalize;
+ font-weight: 100;
+ position: relative;
+}
+.footer-column h2::after{
+    content:"";
+line-height: 2em;
+    width: 50px;
+    height: 2px;
+    background: rgb(201, 0, 0);
+    display: block;
+    margin: 0;
+    transition: 0.5s;
+}
+.footer-column a{
+    color: rgb(128, 127, 127);
+    text-decoration: none;
+    line-height: 2.5em;
+    transition: 1;
+}
+.footer-column a:hover{
+    color: rgb(255, 255, 255);
+}
+.footer-column .social-links a{
+display: flex;
+height: 40px;
+width: 80px;
+background-color: rgba(255, 255, 255, 0.2);
+text-align: center;
+line-height: 40px;
+border-radius: 50%;
+color: #ffffff;
+transition: 1s;
+}
+/* phone and tablet */
+@media (max-width:800px){
+    .content h1{
+        font-size: 50px;
+        text-align: center;
+    }
+    .content p{
+        text-align: center;
+        font-size: 15px;
+        line-height: 1.2em;
+        margin-top: 30px;
+    }
+    .navlinks{
+        background-color:rgb(66, 66, 66);
+        text-align: center;
+       }
+    .navlinks ul  {
+     display: block;
+     list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    }
+    .navlinks li{
+        float: center;
+        }
+    .navlinks li a{
+        display: block;
+        text-align: center;
+        padding: 6%;
+        font-size: 5px;
+        float: left;
+        }
+        .active{
+            background-color: #04AA6D;
+            border-radius: 250%;
+            float: left;
+    }
+    .logo{
+       display: none;
+    }
+    .navlinks ul li::after{
+        display: none;
+    }
+    .navlinks li :hover :not(.active){
+        background-color: #111;
+    }
+        .sign-here{
+            font-size: 16px;
+            display: inline-block;
+            color: white;
+            text-decoration: none;
+           background: red;
+           padding: 8px 32px;
+          border: 2px solid #fff;
+          margin-top: 60px;
+        }
+        .stories{
+            background-color: rgb(53, 53, 53);
+            min-height: 400vh;
+            width: 100%;
+            background-size: cover;
+            position: relative;
+            margin-top: -0.1%;
+        }
+        .row{
+            padding-top: 5%;
+            margin-top: 30%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            width: 80%;
+        }
+        .image{
+            width: 150px;
+           border-radius:10px;
+           margin-top: 60px;
+           border: 3px solid rgb(209, 209, 209);
+        }
+        h3{
+            text-align: center;
+            margin: 0px;
+            margin-top: 20px;
+            width: 1;
+        }
+        .story-txt{
+            color: #fff;
+            font-weight: 300;
+            line-height: 10px;
+            padding: 8px;
+            text-align: center;
+        }
+        .tea{
+            flex-basis: 31px;
+            background:rgb(88, 88, 88) ;
+            border-radius: 10px;
+            font-size: 16px;
+            width: 340px;
+            line-height: 2em;
+            margin-bottom: 45px;
+            
+           }
+        .fashion{
+            flex-basis: 31px;
+            background:rgb(88, 88, 88) ;
+            border-radius: 10px;
+            font-size: 16px;
+            width: 340px;
+            line-height: 2em;
+            margin-bottom: 45px;
+        }
+        .back{
+            flex-basis: 31px;
+            background:rgb(88, 88, 88) ;
+            border-radius: 10px;
+            font-size: 14px;
+            width: 320px;
+            line-height: 2em;
+            margin-bottom: 45px;
+        }
+        /* offers for phone */
+.offers{
+    width: 350px;
+    height: 370vh;
+    text-align: center;
+    font-size: 16px;
+    padding: auto;
+    margin: auto;
+    margin-top: -1000px;
+    background: rgba(173, 173, 173, 0.39);
+    border: 2px solid white;
+    line-height: 1.5em;
+    color: rgb(255, 255, 255);
+}
+.offers p{
+    margin-top: 30px;
+    border: auto;
+    margin-bottom: 50px;
+}
+.offers h1{
+    font-size:32px;
+    margin-top: 40px;
+    color: #fff;
+    line-height: 1.5em;
+}
+/* footer for phone */
+.footer{
+    background-color: rgb(0, 1, 12);
+    width: 100%;
+    background-size: cover;
+    position: relative;
+    margin-top: -40%;
+    height: 150vh;
+    }
+.footer-row{
+    display: flex;
+    justify-content: space-between;
+   }
+.footer-column{
+font-size: 12px;
+}
+.footer-column a{
+    color: rgb(128, 127, 127);
+    text-decoration: none;
+}
+        .footer h2{
+            text-decoration: none;
+            text-align: left;
+            width: 500px;
+            margin-top: 20px;
+            }
+    }
